@@ -44,7 +44,7 @@
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.5",
+    "ratingValue": "4.8",
     "reviewCount": "2"
   },
   "openingHoursSpecification": [{
@@ -166,13 +166,6 @@
   .hero .trust .ti span{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.12em;color:var(--steel-300);text-transform:uppercase}
   .hero .trust .stars{color:var(--gold);letter-spacing:2px;font-size:15px}
 
-  .scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:3;
-    font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--steel-300);
-    text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:10px}
-  .scroll-hint .mouse{width:22px;height:34px;border:1.5px solid var(--steel-500);border-radius:12px;position:relative}
-  .scroll-hint .mouse::after{content:"";position:absolute;top:6px;left:50%;transform:translateX(-50%);width:3px;height:6px;border-radius:2px;background:var(--gold);animation:wheel 1.6s var(--ease) infinite}
-  @keyframes wheel{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}100%{opacity:0;transform:translate(-50%,12px)}}
-
   /* ============ MARQUEE / STATS BAR ============ */
   .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--steel-900);overflow:hidden;padding:0}
   .ticker .track{display:flex;gap:64px;white-space:nowrap;animation:slide 28s linear infinite;padding:18px 0;width:max-content}
@@ -196,13 +189,13 @@
   .about-feats .f svg{width:24px;height:24px;color:var(--gold);flex:none;margin-top:2px}
   .about-feats .f b{font-family:'Archivo';font-weight:700;font-size:15.5px;display:block}
   .about-feats .f span{color:var(--steel-300);font-size:13.5px}
-  .about-visual{position:relative;aspect-ratio:4/5;border-radius:18px;overflow:hidden;
+  .about-visual{position:relative;aspect-ratio:4/3;border-radius:18px;overflow:hidden;
     border:1px solid var(--line);
     background:
       radial-gradient(circle at 30% 20%,rgba(242,176,30,.10),transparent 45%),
       linear-gradient(160deg,var(--steel-800),var(--steel-900));
     display:flex;align-items:center;justify-content:center}
-  .about-visual .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 26%}
+  .about-visual .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center}
   .about-visual .shade{position:absolute;inset:0;z-index:1;
     background:linear-gradient(to top,rgba(14,15,17,.85) 0%,rgba(14,15,17,.35) 34%,transparent 62%)}
   .about-visual .badge{z-index:2}
@@ -332,7 +325,6 @@
     nav.links{display:none}
     .hamb{display:block}
     .hero{padding:120px 0 60px;min-height:auto}
-    .scroll-hint{display:none}
     .svc-grid,.why-grid,.steps{grid-template-columns:1fr}
     .why-grid .w{border-right:0;border-bottom:1px solid var(--line)}
     .why-grid .w:last-child{border-bottom:0}
@@ -426,15 +418,10 @@
       </div>
       <div class="trust">
         <div class="ti"><b>2014</b><span>Desde · 11 anos</span></div>
-        <div class="ti"><b class="stars">★★★★½</b><span>4,5 no Google</span></div>
+        <div class="ti"><b class="stars">★★★★★</b><span>4,8 no Google</span></div>
         <div class="ti"><b>Sinop-MT</b><span>Jd. Terra Rica</span></div>
       </div>
     </div>
-  </div>
-
-  <div class="scroll-hint">
-    <div class="mouse"></div>
-    Role para explorar
   </div>
 </section>
 
@@ -560,7 +547,7 @@
       <div class="w">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
         <h3>Confiança</h3>
-        <p>Mais de uma década atendendo Sinop, com nota 4,5 e clientes que indicam.</p>
+        <p>Mais de uma década atendendo Sinop, com nota 4,8 e clientes que indicam.</p>
       </div>
       <div class="w">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5"/></svg>
